@@ -248,7 +248,7 @@ public:
 		if (size != v.get_size())throw ESize();
 		for (size_t i = 0; i < size; ++i)
 		{
-			multiplication += array[i] * v[i];
+			multiplication += array[i] * conj(v[i]);
 		}
 		return multiplication;
 	}
@@ -601,7 +601,7 @@ public:
 		if (size != v.size)throw ESize();
 		for (size_t i = 0; i < size; ++i)
 		{
-			multiplication += array[i] * v.array[i]; //a= [z1,z2,z3] b= [z4,z5,z6] multi += z1*z4
+			multiplication += array[i] * conj(v.array[i]); //a= [z1,z2,z3] b= [z4,z5,z6] multi += z1*z4
 		}
 		return multiplication;
 	}
