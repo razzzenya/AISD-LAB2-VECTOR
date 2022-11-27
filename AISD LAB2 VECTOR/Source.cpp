@@ -162,7 +162,7 @@ public:
 		if (size != v.get_size())throw ESize();
 		for (size_t i = 0; i < size; ++i)
 		{
-			obj.array[i] = array[i] + v.get_elem(i);
+			obj.array[i] = array[i] + v[i];
 		}
 		return obj;
 	}
@@ -183,7 +183,7 @@ public:
 		if (size != v.get_size())throw ESize();
 		for (size_t i = 0; i < size; ++i)
 		{
-			obj.array[i] = array[i] + v.get_elem(i);
+			obj.array[i] = array[i] + v[i];
 		}
 		return obj;
 	}
@@ -205,7 +205,7 @@ public:
 		if (size != v.get_size())throw ESize();
 		for (size_t i = 0; i < size; ++i)
 		{
-			obj.array[i] = array[i] - v.get_elem(i);
+			obj.array[i] = array[i] - v[i];
 		}
 		return obj;
 	}
@@ -226,7 +226,7 @@ public:
 		if (size != v.get_size())throw ESize();
 		for (size_t i = 0; i < size; ++i)
 		{
-			obj.array[i] = array[i] - v.get_elem(i);
+			obj.array[i] = array[i] - v[i];
 		}
 		return obj;
 	}
@@ -248,7 +248,7 @@ public:
 		if (size != v.get_size())throw ESize();
 		for (size_t i = 0; i < size; ++i)
 		{
-			multiplication += array[i] * v.get_elem(i);
+			multiplication += array[i] * v[i];
 		}
 		return multiplication;
 	}
@@ -533,7 +533,7 @@ public:
 		if (size != v.get_size())throw ESize();
 		for (size_t i = 0; i < size; ++i)
 		{
-			obj.array[i] = array[i] + v.get_elem(i);
+			obj.array[i] = array[i] + v[i];
 		}
 		return obj;
 	}
@@ -553,7 +553,7 @@ public:
 		if (size != v.get_size())throw ESize();
 		for (size_t i = 0; i < size; ++i)
 		{
-			this->array[i] = array[i] + v.get_elem(i);
+			this->array[i] = array[i] + v[i];
 		}
 		return *this;
 	}
@@ -575,7 +575,7 @@ public:
 		if (size != v.get_size())throw ESize();
 		for (size_t i = 0; i < size; ++i)
 		{
-			obj.array[i] = array[i] - v.get_elem(i);
+			obj.array[i] = array[i] - v[i];
 		}
 		return obj;
 	}
@@ -595,7 +595,7 @@ public:
 		if (size != v.get_size())throw ESize();
 		for (size_t i = 0; i < size; ++i)
 		{
-			this->array[i] = array[i] - v.get_elem(i);
+			this->array[i] = array[i] - v[i];
 		}
 		return *this;
 	}
@@ -617,7 +617,7 @@ public:
 		if (size != v.get_size())throw ESize();
 		for (size_t i = 0; i < size; ++i)
 		{
-			multiplication += array[i] * v.get_elem(i);
+			multiplication += array[i] * v[i];
 		}
 		return multiplication;
 	}
