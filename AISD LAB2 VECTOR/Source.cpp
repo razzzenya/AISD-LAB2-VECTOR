@@ -331,11 +331,6 @@ public:
 		return array[i];
 	}
 
-	T get_elem(const size_t i) const
-	{
-		return array[i];
-	}
-
 	size_t get_size() const
 	{
 		return size;
@@ -697,11 +692,6 @@ public:
 	complex<T>& operator [] (const size_t i)
 	{
 		if (i > size or i < 0) throw ENotExistsIndex();
-		return array[i];
-	}
-
-	complex<T> get_elem(const size_t i) const
-	{
 		return array[i];
 	}
 
